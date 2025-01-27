@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>My Website</title>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/ekmas/cs16.css@main/css/cs16.min.css">
+        <link rel="stylesheet" href="style.css" />
+        <script>
+            //set the volume of the audio element to 0.1 on load
+            window.onload = function() { 
+                var audio = document.getElementById('background-audio');
+                audio.volume = 0.1; 
+            };
+        </script>
+    </head>
+    <body>
+        <audio id="background-audio">
+            <source src="assets/audio/music.ogg" type="audio/mpeg"> 
+            Your browser does not support the audio element.
+        </audio>
+        <div class="content">
+            <header>
+                <h1>Floowen</h1>
+                <p>Welcome To My Website!</p>
+            </header>
+            <hr class="cs-hr">
+            <br>
+            <div class="infobox">
+                <div class="cs-tabs">
+                    <input
+                      class="radiotab"
+                      name="tabs"
+                      tabindex="1"
+                      type="radio"
+                      id="tabone"
+                      checked="checked"
+                    />
+                    <label class="label" for="tabone">Information</label>
+                    <div class="panel" tabindex="1">
+                      <h2>About Me!</h2>
+                      <p>Hi!, My name is Ari (21 yo) otherwise known on the internet as Floowen!</p>
+                      <p>I'm a Computer Science Student and are currently suffering with it</p>
+                      <br>
+                      <p>Things I really like:</p>
+                      <li>Ace Combat Series</li>
+                      <li>Counter Strike</li>
+                      <li>Rainbow Six Siege (lie)</li>
+                      <li>Formula 1</li>
+                      <li>A Savant at COD Zombies</li>
+                      <li>Undertale / Deltarune</li>
+                      <li>Ur mom :p</li>
+                    </div>
+                    <input
+                      class="radiotab"
+                      tabindex="1"
+                      name="tabs"
+                      type="radio"
+                      id="tabtwo"
+                    />
+                    <label class="label" for="tabtwo">Contacts</label>
+                    <div class="panel" tabindex="1">
+                      <h2>Links To My Social Media</h2>
+                      <div class="links">
+                        <a href="https://www.youtube.com/@Flowenone" class="cs-btn yt"></a>
+                        <a href="https://x.com/Floowenpc" class="cs-btn x"></a>
+                        <a href="https://github.com/Floowen" class="cs-btn gh"></a>
+                        <a href="https://www.reddit.com/user/Flowen76/" class="cs-btn r"></a>
+                      </div>
+                    </div>
+                    <input
+                      class="radiotab"
+                      tabindex="1"
+                      name="tabs"
+                      type="radio"
+                      id="tabthree"
+                    />
+                  </div>
+            </div>
+            <br>
+            <hr class="cs-hr">
+            <br>
+            <div class="imagecontent">
+                <div class="imagebox">
+                    <img src="assets/image2.png" class="image">
+                </div>
+                <div>
+                    <button class="cs-btn" onclick="document.getElementById('background-audio').play()">Play Music</button>
+                    <button class="cs-btn" onclick="document.getElementById('background-audio').pause(); document.getElementById('background-audio').currentTime = 0;">Stop Music</button>
+                    <div class="cs-slider">
+                        <div class="value">
+                        <p>Low</p>
+                        <p>High</p>
+                        </div>
+                        <div class="ruler"></div>
+                        <input type="range" id="volume-control" min="0" max="0.5" step="0.01" value="0.1" onchange="document.getElementById('background-audio').volume = this.value">
+                        <label for="volume-control">Audio Volume</label>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <hr class="cs-hr">
+            <footer>
+                <p>&copy; 2025 Floowen | cs 1.6 css by <a href="https://samke.me">samuel</a></p>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,86 @@
+body{
+    background-color: #2d3628;
+}
+
+a {
+    color: #fff;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 800px;
+    margin: auto;
+    padding: 40px;
+    background-color: #4a5942;
+    border-left: 1px solid #8c9284;
+    border-top: 1px solid #8c9284;
+    border-bottom: 1px solid #292c21;
+    border-right: 1px solid #292c21;
+}
+
+.imagecontent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.imagebox {
+    display: flex;
+    justify-content: center;
+    background-color: #3e4637;
+    width: 200px;
+    height: 200px;
+    border-right: 1px solid #8c9284;
+    border-bottom: 1px solid #8c9284;
+    border-top: 1px solid #292c21;
+    border-left: 1px solid #292c21;
+}
+
+.yt{
+    background-image: url(assets/youtube.png);
+}
+
+.x{
+    background-image: url(assets/twitter.png);
+}
+
+.gh{
+    background-image: url(assets/github.png);
+}
+
+.r{
+    background-image: url(assets/reddit.png);
+}
+
+.links a{
+    width: 50px;
+    height: 50px;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.links {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+header {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+::selection {
+    background-color: #958831;
+    color: #fff;
+}
