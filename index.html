@@ -3,16 +3,10 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>My Website</title>
+        <title>Floowen's Personal Website!</title>
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/ekmas/cs16.css@main/css/cs16.min.css">
         <link rel="stylesheet" href="style.css" />
-        <script>
-            //set the volume of the audio element to 0.1 on load
-            window.onload = function() { 
-                var audio = document.getElementById('background-audio');
-                audio.volume = 0.1; 
-            };
-        </script>
+        <script src="index.js"></script>
     </head>
     <body>
         <audio id="background-audio">
@@ -25,6 +19,17 @@
                 <p>Welcome To My Website!</p>
             </header>
             <hr class="cs-hr">
+            <br>
+            <p>Search On Wikipedia</p>
+                <form action="http://en.wikipedia.org/wiki/Special:Search" id="searchform" name="searchform">
+                <input class="cs-input"
+                    accesskey="f"
+                    id="searchInput"
+                    name="search"
+                    type="text"
+                    value="" />
+                <button class="cs-btn" type="submit">Search</button>
+                </form>
             <br>
             <div class="infobox">
                 <div class="cs-tabs">
@@ -40,7 +45,7 @@
                     <div class="panel" tabindex="1">
                       <h2>About Me!</h2>
                       <p>Hi!, My name is Ari (21 yo) otherwise known on the internet as Floowen!</p>
-                      <p>I'm a Computer Science Student and are currently suffering with it</p>
+                      <p>I'm a Computer Science Student and are currently suffering in it</p>
                       <br>
                       <p>Things I really like:</p>
                       <li>Ace Combat Series</li>
@@ -49,6 +54,7 @@
                       <li>Formula 1</li>
                       <li>A Savant at COD Zombies</li>
                       <li>Undertale / Deltarune</li>
+                      <li>Drawing!</li>
                       <li>Ur mom :p</li>
                     </div>
                     <input
@@ -58,7 +64,23 @@
                       type="radio"
                       id="tabtwo"
                     />
-                    <label class="label" for="tabtwo">Contacts</label>
+                    <label class="label" for="tabtwo">Favorite Musics</label>
+                    <div class="panel" tabindex="1">
+                        <div class="music_content" display="flex" flex-direction="row" justify-content="space-between">
+                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/135WMJorhiGvPe50XF54D9?utm_source=generator" width="49%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3HPLfZhQUds6N6tZ4WiApn?utm_source=generator" width="49%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1CeC8kOYxUTCC2wHGtWROD?utm_source=generator" width="49%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/53eMEHD5vu4kRB458TCuiM?utm_source=generator" width="49%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        </div>    
+                    </div>
+                    <input
+                      class="radiotab"
+                      tabindex="1"
+                      name="tabs"
+                      type="radio"
+                      id="tabthree"
+                    />
+                    <label class="label" for="tabthree">Contacts</label>
                     <div class="panel" tabindex="1">
                       <h2>Links To My Social Media</h2>
                       <div class="links">
@@ -68,14 +90,6 @@
                         <a href="https://www.reddit.com/user/Flowen76/" class="cs-btn r"></a>
                       </div>
                     </div>
-                    <input
-                      class="radiotab"
-                      tabindex="1"
-                      name="tabs"
-                      type="radio"
-                      id="tabthree"
-                    />
-                  </div>
             </div>
             <br>
             <hr class="cs-hr">
