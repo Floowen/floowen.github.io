@@ -32,6 +32,14 @@ a {
     border-right: 1px solid #292c21;
 }
 
+.text {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
 .imagecontent {
     display: flex;
     justify-content: center;
