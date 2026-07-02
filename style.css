@@ -104,3 +104,26 @@ footer {
     background-color: #958831;
     color: #fff;
 }
+
+.fileList {
+    background-color: #3e4637;
+    border: 1px solid;
+    border-color: #292c21 #8c9284 #8c9284 #292c21;
+    margin-top: 5px;
+    position: relative;
+    font-family: Courier New, Courier, monospace;
+    padding: 5px;
+    max-height: 260px;
+    overflow-y: auto;
+}
+
+#fileList ul,
+#missingList ul {
+    margin: 0;
+    padding-left: 18px;
+}
+
+#fileList li,
+#missingList li {
+    word-break: break-word;
+}
